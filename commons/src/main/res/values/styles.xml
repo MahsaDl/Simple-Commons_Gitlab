@@ -141,14 +141,28 @@
         <item name="closeItemLayout">@layout/abc_action_mode_close_item_material</item>
     </style>
 
+    <!--    mahsa => LightActionBarItems and DarkActionBarItems commented-->
+
+<!--    <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
+<!--        <item name="colorAccent">@color/dark_grey</item>-->
+<!--        <item name="android:textColorHint">@color/color_background_night</item>-->
+<!--    </style>-->
+
+<!--    <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
+<!--        <item name="colorAccent">@color/dark_grey</item>-->
+<!--        <item name="android:textColorHint">@color/hint_black</item>-->
+<!--    </style>-->
+
+    <!--    mahsa => (item name="android:tint") added-->
     <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorAccent">@color/dark_grey</item>
         <item name="android:textColorHint">@color/color_background_night</item>
+        <item name="android:tint">@color/color_background_night</item>
     </style>
-
+    <!--    mahsa => color of (item name="android:textColorHint") changed-->
     <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorAccent">@color/dark_grey</item>
-        <item name="android:textColorHint">@color/hint_black</item>
+        <item name="android:textColorHint">@color/color_primary</item>
     </style>
 
     <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
@@ -249,11 +263,13 @@
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
     </style>
 
+<!--    mahsa => actionBarTheme changed-->
     <style name="AppTheme.BlackAndWhite" parent="AppTheme.Base">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
         <item name="colorAccent">@color/md_grey_black</item>
-        <item name="actionBarTheme">@style/LightActionBarItems</item>
+<!--        <item name="actionBarTheme">@style/LightActionBarItems</item>-->
+        <item name="actionBarTheme">@style/DarkActionBarItems</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:textColorPrimary">@color/theme_light_background_color</item>
         <item name="android:itemBackground">@color/md_grey_black</item>
