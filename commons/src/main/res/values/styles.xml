@@ -263,7 +263,7 @@
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
     </style>
 
-<!--    mahsa => actionBarTheme changed-->
+<!--    mahsa => actionBarTheme changed and android:actionOverflowButtonStyle inserted -->
     <style name="AppTheme.BlackAndWhite" parent="AppTheme.Base">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
@@ -278,6 +278,11 @@
         <item name="colorControlHighlight">@color/activated_item_foreground</item>
         <item name="android:colorControlActivated">@color/md_grey_white</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflowButtonStyleBlackAndWhite</item>
+    </style>
+    <!--    mahsa => MyOverflowButtonStyleBlackAndWhite inserted -->
+    <style name="MyOverflowButtonStyleBlackAndWhite" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">#FFFFFF</item>
     </style>
 
     <style name="AppTheme.BlackAndWhite.TextStyle">
