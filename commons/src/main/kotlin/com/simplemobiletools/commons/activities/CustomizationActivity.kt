@@ -147,14 +147,17 @@ class CustomizationActivity : BaseSimpleActivity() {
 
                 )
             )
-            put(
-                THEME_DARK,
-                /**
-                 * mahsa ==> MyTheme(R.string.dark_theme) and primaryColorId changed
-                 */
-                //MyTheme(R.string.dark_theme, R.color.theme_dark_text_color, R.color.theme_dark_background_color, R.color.color_primary, R.color.color_primary)
-                MyTheme(R.string.dark_theme, R.color.theme_dark_text_color, R.color.theme_dark_background_color, R.color.color_background_night, R.color.color_primary_night,R.color.color_card_dark)
-            )
+            /**
+             * mahsa ==> THEME_DARK commented
+             */
+//            put(
+//                THEME_DARK,
+//                /**
+//                 * mahsa ==> MyTheme(R.string.dark_theme) and primaryColorId changed
+//                 */
+//                //MyTheme(R.string.dark_theme, R.color.theme_dark_text_color, R.color.theme_dark_background_color, R.color.color_primary, R.color.color_primary)
+//                MyTheme(R.string.dark_theme, R.color.theme_dark_text_color, R.color.theme_dark_background_color, R.color.color_background_night, R.color.color_primary_night,R.color.color_card_dark)
+//            )
             //put(THEME_SOLARIZED, MyTheme(R.string.solarized, R.color.theme_solarized_text_color, R.color.theme_solarized_background_color, R.color.theme_solarized_primary_color))
             put(
                 THEME_DARK_RED,
@@ -167,7 +170,12 @@ class CustomizationActivity : BaseSimpleActivity() {
                 )
             )
             put(THEME_WHITE, MyTheme(R.string.white, R.color.dark_grey, android.R.color.white, android.R.color.white, R.color.color_primary,R.color.color_card_light))
-            put(THEME_BLACK_WHITE, MyTheme(R.string.black_white, android.R.color.white, android.R.color.black, android.R.color.black, R.color.md_grey_black,R.color.color_card_dark))
+            /**
+             * mahsa ==> THEME_BLACK_WHITE changed
+             */
+//          put(THEME_BLACK_WHITE, MyTheme(R.string.black_white, android.R.color.white, android.R.color.black, android.R.color.black, R.color.md_grey_black,R.color.color_card_dark))
+            put(THEME_BLACK_WHITE, MyTheme(R.string.dark_theme, android.R.color.white, android.R.color.black, android.R.color.black, R.color.color_primary_night,R.color.color_card_dark))
+
             put(THEME_CUSTOM, MyTheme(R.string.custom, 0, 0, 0, 0,0))
 
             if (storedSharedTheme != null) {
