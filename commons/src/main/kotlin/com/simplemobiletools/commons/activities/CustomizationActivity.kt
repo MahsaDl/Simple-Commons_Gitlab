@@ -602,7 +602,7 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun pickPrimaryColor() {
-        if (!packageName.startsWith("com.simplemobiletools.", true) && baseConfig.appRunCount > 50) {
+        if (!packageName.startsWith(resources.getString(R.string.daria_package_name), true) && baseConfig.appRunCount > 50) {
             finish()
             return
         }
