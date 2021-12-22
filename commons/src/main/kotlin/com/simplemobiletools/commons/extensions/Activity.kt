@@ -703,6 +703,7 @@ fun Activity.deleteRecursively(file: File): Boolean {
         rescanPath(file.path)
         for (child in files) {
             deleteRecursively(child)
+            rescanPath(child.path)
         }
     }
 
