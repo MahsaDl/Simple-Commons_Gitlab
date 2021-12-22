@@ -430,7 +430,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     // synchronous return value determines only if we are showing the SAF dialog, callback result tells if the SD or OTG permission has been granted
     fun handleSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
-        return if (!packageName.startsWith("com.simplemobiletools")) {
+        return if (!packageName.startsWith(resources.getString(R.string.daria_package_name))) {
             callback(true)
             false
         } else if (isShowingSAFDialog(path) || isShowingOTGDialog(path)) {
@@ -443,7 +443,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
     fun handleAndroidSAFDialog(path: String, callback: (success: Boolean) -> Unit): Boolean {
-        return if (!packageName.startsWith("com.simplemobiletools")) {
+        return if (!packageName.startsWith(resources.getString(R.string.daria_package_name))) {
             callback(true)
             false
         } else if (isShowingAndroidSAFDialog(path)) {
@@ -759,7 +759,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     private fun getExportSettingsFilename(): String {
         var defaultFilename = baseConfig.lastExportedSettingsFile
         if (defaultFilename.isEmpty()) {
-            val appName = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.simplemobiletools.")
+            val appName = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix(resources.getString(R.string.daria_package_name))
             defaultFilename = "$appName-settings.txt"
         }
 
