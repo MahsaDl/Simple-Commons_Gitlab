@@ -15,6 +15,7 @@ import com.simplemobiletools.commons.R
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.models.FileDirItem
 import kotlinx.android.synthetic.main.item_breadcrumb.view.*
+import java.util.*
 
 class Breadcrumbs(context: Context, attrs: AttributeSet) : HorizontalScrollView(context, attrs) {
     private val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -209,7 +210,7 @@ class Breadcrumbs(context: Context, attrs: AttributeSet) : HorizontalScrollView(
             inflater.inflate(R.layout.item_breadcrumb, itemsLayout, false).apply {
                 var textToAdd = item.name
                 if (addPrefix) {
-                    textToAdd = "> $textToAdd"
+                    textToAdd = if (Locale.getDefault().getLanguage().equals("fa")) "< $textToAdd" else "> $textToAdd"
                 }
 
                 isActivated = item.path.trimEnd('/') == lastPath.trimEnd('/')
