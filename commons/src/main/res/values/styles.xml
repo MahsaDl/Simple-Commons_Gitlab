@@ -37,16 +37,48 @@
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
         <item name="android:actionModeCloseDrawable">@drawable/ic_arrow_left_vector_light</item>
     </style>
-    <!--    mahsa => actionBarTheme and android:itemBackground changed and android:actionOverflowButtonStyle inserted -->
+<!--    <style name="MyDarkToolbarStyle" parent="Widget.AppCompat.Toolbar">-->
+<!--        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>-->
+<!--    </style>-->
+<!--    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">-->
+<!--        &lt;!&ndash; if using android.widget.PopupMenu &ndash;&gt;-->
+<!--        <item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+
+<!--    </style>-->
+<!--    <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.DarkActionBar">-->
+<!--        <item name="actionBarTheme">@style/AppTheme.ActionBarTheme.Light</item>-->
+<!--        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.ActionBarTheme.Light" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+<!--        <item name="colorControlActivated">#FFffffff</item>-->
+<!--        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+<!--    </style>-->
+<!--    <style name="PopupMenu" parent="ThemeOverlay.AppCompat.Dark">-->
+<!--        <item name="android:colorBackground">@color/hint_black</item>-->
+<!--        <item name="android:textColor">@color/hint_black</item>    </style>-->
+
+<!--    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">-->
+<!--        &lt;!&ndash; changes the background of the Toolbar's popup &ndash;&gt;-->
+<!--        <item name="android:colorBackground">@color/white</item>-->
+<!--        <item name="android:textColor">@color/hint_black</item>-->
+<!--    </style>-->
+<!--    <style name="ThemeOverlay.AppTheme.Base" parent="ThemeOverlay.AppCompat.Light">-->
+<!--        <item name="android:colorBackground">@color/white</item>-->
+<!--        <item name="android:textColor">@color/hint_black</item>-->
+<!--    </style>-->
+<!--    <style name="ThemeOverlay.AppTheme.BlackAndWhite" parent="ThemeOverlay.AppCompat.Dark">-->
+<!--        <item name="android:colorBackground">@color/hint_black</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--    </style>-->
     <style name="AppTheme.BlackAndWhite" parent="AppTheme.Base">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
         <item name="colorAccent">@color/md_grey_black</item>
-        <!--        <item name="actionBarTheme">@style/LightActionBarItems</item>-->
+<!--        <item name="actionBarTheme">@style/LightActionBarItems</item>-->
         <item name="actionBarTheme">@style/DarkActionBarItems</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:textColorPrimary">@color/theme_light_background_color</item>
-        <!--        <item name="android:itemBackground">@color/md_grey_black</item>-->
         <item name="android:itemBackground">@color/dark_grey</item>
         <item name="android:itemTextAppearance">@style/AppTheme.BlackAndWhite.TextStyle</item>
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
@@ -55,11 +87,50 @@
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
         <item name="android:actionOverflowButtonStyle">@style/MyOverflowButtonStyleBlackAndWhite</item>
     </style>
-    <!--    mahsa => MyOverflowButtonStyleBlackAndWhite inserted -->
+<!--    <style name="MyLightToolbarStyle" parent="ThemeOverlay.AppCompat.Light">-->
+<!--        <item name="android:itemBackground"></item>-->
+<!--        <item name="android:textColor">@color/dark_grey</item>-->
+<!--    </style>-->
+<!--    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat.Dark">-->
+<!--        <item name="android:itemBackground">@color/dark_grey</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--    </style>-->
+<!--    <style name="AppTheme.PopupOverlay"-->
+<!--        parent="ThemeOverlay.AppCompat.Light">-->
+<!--    </style>-->
+<!--    <style name="AppTheme.PopupOverlay.Dark"-->
+<!--        parent="ThemeOverlay.AppCompat.Dark">-->
+<!--    </style>-->
+
+<!--    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">-->
+<!--        <item name="android:tint">#BA0000</item>-->
+<!--    </style>-->
+
+<!--    <style name="MyOverflowButtonStyleDark" parent="Widget.AppCompat.ActionButton.Overflow">-->
+<!--        <item name="android:tint">#FFFFFF</item>-->
+<!--    </style>-->
+
     <style name="MyOverflowButtonStyleBlackAndWhite" parent="Widget.AppCompat.ActionButton.Overflow">
         <item name="android:tint">#FFFFFF</item>
     </style>
-    <!--    mahsa => AppTheme.Dark.NoActionBar-->
+
+    <!-- App themes -->
+    <!-- White -->
+    <style name="AppTheme.White" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="colorPrimaryDark">@color/md_grey_white_dark</item>
+        <item name="colorAccent">@color/md_grey_white</item>
+        <item name="actionBarTheme">@style/DarkActionBarItems</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/theme_dark_background_color</item>
+        <item name="android:itemBackground">@color/md_yellow_200</item>
+        <item name="android:itemTextAppearance">@style/AppTheme.White.TextStyle</item>
+        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="android:colorControlActivated">@color/dark_grey</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+    </style>
+//mahsa
     <style name="AppTheme.Dark.NoActionBar" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
@@ -69,9 +140,68 @@
         <item name="android:colorControlActivated">@color/md_grey_white</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
     </style>
-    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:tint">#000000</item>
+    <style name="AppTheme.White.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/md_grey_white</item>
+        <item name="colorPrimaryDark">@color/md_grey_white_dark</item>
+        <item name="colorAccent">@color/md_grey_white</item>
+        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="android:colorControlActivated">@color/dark_grey</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
     </style>
+
+
+    <!-- mahsa Dark theme added -->
+    <style name="AppTheme.Dark" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/md_grey_black</item>
+        <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
+        <item name="colorAccent">@color/md_grey_black</item>
+        <item name="actionBarTheme">@style/LightActionBarItems</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/theme_light_background_color</item>
+        <item name="android:itemBackground">@color/md_yellow</item>
+        <item name="android:itemTextAppearance">@style/AppTheme.Dark.TextStyle</item>
+        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="android:colorControlActivated">@color/md_grey_white</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+
+    </style>
+
+    <style name="AppTheme.White.TextStyle">
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+
+
+
+
+    <style name="AppTheme.BlackAndWhite.TextStyle">
+        <item name="android:textColor">@color/md_grey_white</item>
+    </style>
+    <style name="AppTheme.Dark.TextStyle">
+        <item name="android:textColor">@color/md_grey_white</item>
+    </style>
+    <style name="AppTheme.BlackAndWhite.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/md_grey_black</item>
+        <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
+        <item name="colorAccent">@color/md_grey_black</item>
+        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="android:colorControlActivated">@color/md_grey_white</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+    </style>
+
+
+
+
+
+    <style name="AppTheme.Base.Core" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="colorControlHighlight">@color/activated_item_foreground</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+        </style>
+
     <style name="TranslucentTheme" parent="Theme.AppCompat.NoActionBar" />
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
@@ -123,9 +253,13 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
+
+<!--        <item name="android:popupBackground">@color/color_primary</item>-->
+
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
+
     <style name="PinNumberStyle.Base">
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/small_margin</item>
@@ -159,7 +293,7 @@
     </style>
     <!--mahsa ==> background removed-->
     <style name="Base.Widget.AppCompat.ActionMode" parent="">
-        <!--        <item name="background">@drawable/actionmenu_background</item>-->
+<!--        <item name="background">@drawable/actionmenu_background</item>-->
         <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
         <item name="height">?attr/actionBarSize</item>
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
@@ -167,30 +301,31 @@
         <item name="closeItemLayout">@layout/abc_action_mode_close_item_material</item>
     </style>
 
-    <!--    mahsa => LightActionBarItems and DarkActionBarItems commented-->
+<!--    mahsa => LightActionBarItems and DarkActionBarItems changed-->
 
     <!--    <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
-    <!--        <item name="colorAccent">@color/dark_grey</item>-->
-    <!--        <item name="android:textColorHint">@color/color_background_night</item>-->
-    <!--    </style>-->
+<!--        <item name="colorAccent">@color/dark_grey</item>-->
+<!--        <item name="android:textColorHint">@color/color_background_night</item>-->
+<!--    </style>-->
 
-    <!--    <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
-    <!--        <item name="colorAccent">@color/dark_grey</item>-->
-    <!--        <item name="android:textColorHint">@color/hint_black</item>-->
-    <!--    </style>-->
+<!--    <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
+<!--        <item name="colorAccent">@color/dark_grey</item>-->
+<!--        <item name="android:textColorHint">@color/hint_black</item>-->
+<!--    </style>-->
 
-    <!--    mahsa => (item name="android:tint") added-->
     <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorAccent">@color/dark_grey</item>
         <item name="android:textColorHint">@color/color_background_night</item>
         <item name="android:tint">@color/color_background_night</item>
     </style>
-
     <!--    mahsa => color of (item name="android:textColorHint") changed-->
     <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorAccent">@color/dark_grey</item>
         <item name="android:textColorHint">@color/color_primary</item>
     </style>
+
+
+
     <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetModalStyle</item>
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
@@ -244,80 +379,6 @@
         <item name="android:paddingBottom">@dimen/bigger_margin</item>
     </style>
 
-    <!-- App themes -->
-    <!-- White -->
-    <style name="AppTheme.White" parent="AppTheme.Base">
-        <item name="colorPrimary">@color/md_grey_white</item>
-        <item name="colorPrimaryDark">@color/md_grey_white_dark</item>
-        <item name="colorAccent">@color/md_grey_white</item>
-        <item name="actionBarTheme">@style/DarkActionBarItems</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:textColorPrimary">@color/theme_dark_background_color</item>
-        <item name="android:itemBackground">@color/md_grey_white</item>
-        <item name="android:itemTextAppearance">@style/AppTheme.White.TextStyle</item>
-        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="android:colorControlActivated">@color/dark_grey</item>
-        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-    </style>
-    <!-- mahsa Dark theme added -->
-    <style name="AppTheme.Dark" parent="AppTheme.Base">
-        <item name="colorPrimary">@color/color_primary_night</item>
-        <item name="colorPrimaryDark">@color/color_primary_night</item>
-        <item name="colorAccent">@color/color_accent</item>
-<!--        mhs  dark to light-->
-        <item name="actionBarTheme">@style/LightActionBarItems</item>
-
- <!--        mhs  false-->
-        <item name="android:windowLightStatusBar">false</item>
-
-        <!--        mhs  @color/theme_light_background_color changed-->
-        <item name="android:textColorPrimary">@color/theme_light_background_color</item>
-        <item name="android:itemBackground">@color/md_grey_white</item>
-
-        <!--        mhs  @style/AppTheme.Dark.TextStyle changed-->
-        <item name="android:itemTextAppearance">@style/AppTheme.Dark.TextStyle</item>
-        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="android:colorControlActivated">@color/md_grey_white</item>
-        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-    </style>
-
-
-    <style name="AppTheme.White.TextStyle">
-        <item name="android:textColor">@color/dark_grey</item>
-    </style>
-
-    <style name="AppTheme.BlackAndWhite.TextStyle">
-        <item name="android:textColor">@color/md_grey_white</item>
-    </style>
-<!--    mhs AppTheme.Dark.TextStyle added-->
-    <style name="AppTheme.Dark.TextStyle">
-        <item name="android:textColor">@color/md_grey_white</item>
-    </style>
-    <style name="AppTheme.BlackAndWhite.NoActionBar" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/md_grey_black</item>
-        <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
-        <item name="colorAccent">@color/md_grey_black</item>
-        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="android:colorControlActivated">@color/md_grey_white</item>
-        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-    </style>
-    <style name="AppTheme.Base.Core" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-    </style>
-    <style name="AppTheme.White.NoActionBar" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/md_grey_white</item>
-        <item name="colorPrimaryDark">@color/md_grey_white_dark</item>
-        <item name="colorAccent">@color/md_grey_white</item>
-        <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="colorControlHighlight">@color/activated_item_foreground</item>
-        <item name="android:colorControlActivated">@color/dark_grey</item>
-        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-    </style>
 
     <style name="AppTheme.Red_100" parent="AppTheme.Base">
         <item name="colorPrimary">@color/md_red_100</item>
