@@ -32,7 +32,7 @@
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
         <item name="colorControlHighlight">@color/activated_item_foreground</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-        mahsa => name="actionOverflowButtonStyle" changed to
+<!--        mahsa => name="actionOverflowButtonStyle" changed to name="android:actionOverflowButtonStyle"-->
         <item name="android:actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
         <item name="android:actionModeCloseDrawable">@drawable/ic_arrow_left_vector_light</item>
     </style>
