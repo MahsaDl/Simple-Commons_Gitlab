@@ -32,7 +32,8 @@
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
         <item name="colorControlHighlight">@color/activated_item_foreground</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
-        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+<!--        mahsa => name="actionOverflowButtonStyle" changed to name="android:actionOverflowButtonStyle"-->
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
         <item name="android:actionModeCloseDrawable">@drawable/ic_arrow_left_vector_light</item>
     </style>
     <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
@@ -133,7 +134,7 @@
     </style>
     <!--mahsa ==> background removed-->
     <style name="Base.Widget.AppCompat.ActionMode" parent="">
-<!--        <item name="background">@drawable/actionmenu_background</item>-->
+        <!--        <item name="background">@drawable/actionmenu_background</item>-->
         <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
         <item name="height">?attr/actionBarSize</item>
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
@@ -143,15 +144,15 @@
 
     <!--    mahsa => LightActionBarItems and DarkActionBarItems commented-->
 
-<!--    <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
-<!--        <item name="colorAccent">@color/dark_grey</item>-->
-<!--        <item name="android:textColorHint">@color/color_background_night</item>-->
-<!--    </style>-->
+    <!--    <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
+    <!--        <item name="colorAccent">@color/dark_grey</item>-->
+    <!--        <item name="android:textColorHint">@color/color_background_night</item>-->
+    <!--    </style>-->
 
-<!--    <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
-<!--        <item name="colorAccent">@color/dark_grey</item>-->
-<!--        <item name="android:textColorHint">@color/hint_black</item>-->
-<!--    </style>-->
+    <!--    <style name="DarkActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">-->
+    <!--        <item name="colorAccent">@color/dark_grey</item>-->
+    <!--        <item name="android:textColorHint">@color/hint_black</item>-->
+    <!--    </style>-->
 
     <!--    mahsa => (item name="android:tint") added-->
     <style name="LightActionBarItems" parent="ThemeOverlay.AppCompat.ActionBar">
@@ -252,7 +253,7 @@
     <style name="AppTheme.White.TextStyle">
         <item name="android:textColor">@color/dark_grey</item>
     </style>
-<!--    mahsa => AppTheme.Dark.NoActionBar-->
+    <!--    mahsa => AppTheme.Dark.NoActionBar-->
     <style name="AppTheme.Dark.NoActionBar" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
@@ -272,16 +273,16 @@
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
     </style>
 
-<!--    mahsa => actionBarTheme and android:itemBackground changed and android:actionOverflowButtonStyle inserted -->
+    <!--    mahsa => actionBarTheme and android:itemBackground changed and android:actionOverflowButtonStyle inserted -->
     <style name="AppTheme.BlackAndWhite" parent="AppTheme.Base">
         <item name="colorPrimary">@color/md_grey_black</item>
         <item name="colorPrimaryDark">@color/md_grey_black_dark</item>
         <item name="colorAccent">@color/md_grey_black</item>
-<!--        <item name="actionBarTheme">@style/LightActionBarItems</item>-->
+        <!--        <item name="actionBarTheme">@style/LightActionBarItems</item>-->
         <item name="actionBarTheme">@style/DarkActionBarItems</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:textColorPrimary">@color/theme_light_background_color</item>
-<!--        <item name="android:itemBackground">@color/md_grey_black</item>-->
+        <!--        <item name="android:itemBackground">@color/md_grey_black</item>-->
         <item name="android:itemBackground">@color/dark_grey</item>
         <item name="android:itemTextAppearance">@style/AppTheme.BlackAndWhite.TextStyle</item>
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
