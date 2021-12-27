@@ -212,10 +212,10 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
             }
         }
 
-        val drawableId = if (useCrossAsBack) R.drawable.ic_cross_vector else R.drawable.ic_arrow_left_vector
+        val drawableId = if (useCrossAsBack) R.drawable.ic_cross_vector else if(Locale.getDefault().language.equals("fa")) R.drawable.ic_arrow_right_vector else R.drawable.ic_arrow_left_vector
         val icon = resources.getColoredDrawableWithColor(drawableId, color)
         supportActionBar?.setHomeAsUpIndicator(icon)
-        customizeActionModeCloseButton(R.drawable.ic_arrow_left_vector)
+        customizeActionModeCloseButton(if(Locale.getDefault().language.equals("fa")) R.drawable.ic_arrow_right_vector else R.drawable.ic_arrow_left_vector)
     }
    //mahsa => customizeActionModeCloseButton
     fun customizeActionModeCloseButton(iconID: Int) {
