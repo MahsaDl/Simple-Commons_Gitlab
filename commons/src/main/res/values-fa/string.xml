@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">قبول</string>
+    <string name="cancel">انصراف</string>
+    <!-- Actionbar items -->
+    <string name="delete">حذف</string>
+    <string name="remove">برداشتن</string>
+    <string name="rename">تغییر نام</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="share_via">اشتراک گذاری با</string>
+    <string name="select_all">انتخاب همه</string>
+    <string name="select_text">انتخاب متن</string>
+    <string name="hide">پنهان کردن</string>
+    <string name="unhide">آشکار کردن</string>
+    <string name="hide_folder">مخفی کردن پوشه</string>
+    <string name="unhide_folder">آشکار کردن پوشه</string>
+    <string name="temporarily_show_hidden">نمایش فایل‌های پنهان</string>
+    <string name="stop_showing_hidden">عدم نمایش فایل‌های پنهان</string>
+    <string name="maximum_share_reached">شما نمی توانید این حجم از محتوا را به یکباره به اشتراک بگذارید</string>
+    <string name="print">چاپ</string>
+    <string name="create_shortcut">ساخت میانبر</string>
+
+    <!-- Sorting -->
+    <string name="sort_by">مرتب سازی بر اساس</string>
+    <string name="name">نام</string>
+    <string name="size">اندازه</string>
+    <string name="last_modified">آخرین تغییرات</string>
+    <string name="date_created">تاریخ ایجاد</string>
+    <string name="date_taken">Date taken</string>
+    <string name="title">عنوان</string>
+    <string name="filename">نام فایل</string>
+    <string name="extension">نوع</string>
+    <string name="random">تصادفی</string>
+    <string name="sort_randomly">مرتب سازی تصادفی</string>
+    <string name="sort_numeric_parts">مرتب سازی اعداد بر اساس مقدار واقعی</string>
+    <string name="ascending">صعودی</string>
+    <string name="descending">نزولی</string>
+    <string name="use_for_this_folder">فقط روی این پوشه اعمال شود</string>
+    <string name="use_custom_sorting">از مرتب سازی سفارشی استفاده کنید</string>
+    <string name="change_order">تغییر ترتیب نمایش</string>
+
+    <!-- Confirmation dialog -->
+    <string name="proceed_with_deletion">آیا مطمئن هستید که می خواهید به حذف ادامه دهید؟</string>
+    <string name="deletion_confirmation">آیا مطمئنید که می خواهید %s را حذف کنید؟</string>    <!-- Are you sure you want to delete 5 items? -->
+    <string name="move_to_recycle_bin_confirmation">آیا مطمئن هستید که می خواهید %s را به سطل بازیافت منتقل کنید؟</string>    <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
+    <string name="are_you_sure_delete">آیا مطمئن هستید که میخواهید این مورد را حذف کنید؟</string>
+    <string name="are_you_sure_recycle_bin">آیا مطمئن هستید که می خواهید این مورد را به سطل بازیافت منتقل کنید؟</string>
+    <string name="do_not_show_again">دوباره نشان نده</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="maybe">شاید</string>
+
+    <plurals name="delete_warning">
+        <item quantity="one">هشدار: در حال حذف پوشه %d هستید</item>
+        <item quantity="other">هشدار: در حال حذف پوشه‌های %d هستید</item>
+    </plurals>
+
+    <!-- File properties -->
+    <string name="properties">جزییات</string>
+    <string name="path">آدرس</string>
+    <string name="items_selected">موارد انتخاب شده</string>
+    <string name="direct_children_count">تعداد آیتم‌های زیر مجموعه</string>
+    <string name="files_count">تعداد کل فایل ها</string>
+    <string name="resolution">وضوح</string>
+    <string name="duration">مدت زمان</string>
+    <string name="artist">هنرمند</string>
+    <string name="album">آلبوم</string>
+    <string name="focal_length">فاصله کانونی</string>
+    <string name="camera">دوربین</string>
+    <string name="song_title">عنوان آهنگ</string>
+
+    <!-- Copy / Move -->
+    <string name="copy">کپی</string>
+    <string name="move">انتقال</string>
+    <string name="copy_move">کپی / انتقال</string>
+    <string name="copy_to">کپی در</string>
+    <string name="move_to">انتقال به</string>
+    <string name="source">منبع</string>
+    <string name="destination">مقصد</string>
+    <string name="select_destination">انتخاب مقصد</string>
+    <string name="click_select_destination">برای انتخاب مقصد اینجا را کلیک کنید</string>
+    <string name="invalid_destination">نمیتوانید در ادرس مقصد مورد نظر بنویسید</string>
+    <string name="please_select_destination">لطفا یک مقصد انتخاب نمایید</string>
+    <string name="source_and_destination_same">منبع و مقصد نمی توانند یکسان باشند</string>
+    <string name="copy_failed">فایل ها کپی نشد</string>
+    <string name="copying">در حال کپی…</string>
+    <string name="copying_success">فایل ها با موفقیت کپی شدند</string>
+    <string name="copying_success_one">فایل با موفقیت کپی شد</string>
+    <string name="copy_move_failed">خطایی رخ داد</string>
+    <string name="moving">در حال انتقال…</string>
+    <string name="moving_success">فایل ها با موفقیت منتقل شدند</string>
+    <string name="moving_success_one">فایل با موفقیت منتقل شد</string>
+    <string name="moving_success_partial">برخی از فایل ها را نمی توان منتقل کرد</string>
+    <string name="copying_success_partial">برخی از فایل ها کپی نشدند</string>
+    <string name="no_files_selected">هیچ فایلی انتخاب نشده است</string>
+    <string name="saving">در حال ذخیره سازی…</string>
+    <string name="could_not_create_folder">پوشه %s ایجاد نشد</string>
+    <string name="could_not_create_file">فایل %s ایجاد نشد</string>
+    <string name="no_new_items">هیچ مورد جدیدی یافت نشد</string>
+    <string name="no_space">مقصد فضای کافی در دسترس ندارد.\n  %1$s لازم است، %2$s موجود است</string>
+
+    <!-- View types -->
+    <string name="change_view_type">تغییر نوع نمایش</string>
+    <string name="grid">گرید</string>
+    <string name="list">لیست</string>
+    <string name="increase_column_count">افزایش تعداد ستون ها</string>
+    <string name="reduce_column_count">کاهش تعداد ستون ها</string>
+    <string name="change_cover_image">تغییر تصویر کاور</string>
+    <string name="select_photo">عکس را انتخاب کنید</string>
+
+    <!-- Settings -->
+    <string name="settings">تنظیمات</string>
+    <string name="purchase_simple_thank_you">Purchase Simple Thank You</string>
+    <string name="general_settings">عمومی</string>
+    <string name="color_customization">سفارشی سازی رنگ</string>
+    <string name="customize_colors">سفارشی سازی رنگ‌ها</string>
+    <string name="customize_colors_locked">سفارشی کردن رنگ ها (قفل شده)</string>
+    <string name="customize_widget_colors">سفارشی کردن رنگ ویجت</string>
+    <string name="customize_notifications">اعلان ها را سفارشی کنید</string>
+    <string name="use_english_language">از زبان انگلیسی استفاده کنید</string>
+    <string name="show_hidden_items">نمایش موارد پنهان</string>
+    <string name="font_size">اندازه فونت</string>
+    <string name="small">کوچک</string>
+    <string name="medium">متوسط</string>
+    <string name="large">بزرگ</string>
+    <string name="extra_large">خیلی بزرگ</string>
+    <string name="password_protect_hidden_items">گذرواژه از قابلیت مشاهده مورد پنهان محافظت می‌کند</string>
+    <string name="password_protect_whole_app">گذرواژه از کل برنامه محافظت می‌کند</string>
+    <string name="password_protect_file_deletion">حفظ رمز عبور از حذف و جابجایی فایل</string>
+    <string name="keep_last_modified">حفظ مقدار آخرین ویرایش قبلی در عملیات فایل</string>
+    <string name="show_info_bubble">نمایش حباب اطلاعات در پیمایش موارد با کشیدن نوار پیمایش</string>
+    <string name="prevent_phone_from_sleeping">جلوگیری از خوابیدن تلفن در حالی که برنامه در پیش زمینه است</string>
+    <string name="skip_delete_confirmation">همیشه از گفتگوی تایید حذف رد شوید</string>
+    <string name="enable_pull_to_refresh">فعال کردن pull-to-refresh از بالا</string>
+    <string name="use_24_hour_time_format">از قالب ساعت 24 ساعته استفاده کنید</string>
+    <string name="change_date_and_time_format">تغییر قالب تاریخ و زمان</string>
+    <string name="sunday_first">شروع هفته از یکشنبه</string>
+    <string name="widgets">ابزارک ها</string>
+    <string name="use_same_snooze">همیشه از یک زمان چرت زدن استفاده کنید</string>
+    <string name="snooze_time">زمان تعویق</string>
+    <string name="vibrate_on_button_press">لرزش با فشار دادن دکمه</string>
+    <string name="move_items_into_recycle_bin">موارد را به جای حذف به سطل بازیافت منتقل کنید</string>
+    <string name="recycle_bin_cleaning_interval">فاصله تمیز کردن سطل بازیافت</string>
+    <string name="empty_recycle_bin">سطل بازیافت را خالی کنید</string>
+    <string name="force_portrait_mode">حالت پرتره اجباری</string>
+    <string name="export_settings">تنظیمات صادرات</string>
+    <string name="import_settings">وارد کردن تنظیمات</string>
+    <string name="settings_exported_successfully">تنظیمات با موفقیت صادر شد</string>
+    <string name="settings_imported_successfully">تنظیمات با موفقیت ایم شد</string>
+    <string name="start_name_with_surname">شروع نام با نام خانوادگی</string>
+    <string name="clear_cache">پاک کردن حافظه پنهان</string>
+
+    <!-- Setting sections -->
+    <string name="visibility">قابلیت مشاهده</string>
+    <string name="security">امنیت</string>
+    <string name="scrolling">پیمایش</string>
+    <string name="file_operations">عملیات فایل</string>
+    <string name="recycle_bin">سطل بازیافت</string>
+    <string name="saving_label">ذخیره</string>
+    <string name="startup">راه اندازی</string>
+    <string name="text">متن</string>
+    <string name="migrating">در حال مهاجرت</string>
+    <string name="quality">کیفیت</string>
+    <string name="main_screen">صفحه اصلی</string>
+    <string name="thumbnails">تصاویر کوچک</string>
+    <string name="list_view">نمای فهرست</string>
+
+    <!-- Default tab to open -->
+    <string name="manage_shown_tabs">برگه های نشان داده شده را مدیریت کنید</string>
+    <string name="default_tab_to_open">برگه برای باز کردن در شروع برنامه</string>
+    <string name="contacts_tab">مخاطبین</string>
+    <string name="favorites_tab">موارد دلخواه</string>
+    <string name="call_history_tab">سابقه تماس</string>
+    <string name="groups_tab">گروه ها</string>
+    <string name="last_used_tab">آخرین مورد استفاده</string>
+    <string name="files_tab">فایل‌ها</string>
+    <string name="recent_files_tab">فایل های اخیر</string>
+
+    <!-- Create new -->
+    <string name="create_new">ایجاد</string>
+    <string name="folder">پوشه</string>
+    <string name="file">فایل</string>
+    <string name="create_new_folder">پوشه جدید ایجاد کنید</string>
+    <string name="name_taken">یک فایل یا پوشه با آن نام از قبل وجود دارد</string>
+    <string name="invalid_name">این نام دارای نویسه‌های نامعتبر است</string>
+    <string name="empty_name">لطفاً یک نام وارد کنید</string>
+    <string name="unknown_error_occurred">یک خطای ناشناخته روی داد</string>
+
+    <!-- File operation conflicts -->
+    <string name="file_already_exists">فایل \"%s\" از قبل وجود دارد</string>
+    <string name="file_already_exists_overwrite">فایل \"%s\" از قبل وجود دارد. بازنویسی شود؟</string>
+    <string name="folder_already_exists">پوشه \"%s\" از قبل وجود دارد</string>
+    <string name="merge">ادغام</string>
+    <string name="keep_both">هر دو را نگه دارید</string>
+    <string name="overwrite">بازنویسی</string>
+    <string name="skip">پرش</string>
+    <string name="append">افزودن با \'_1\'</string>
+    <string name="apply_to_all">اعمال برای همه</string>
+
+    <!-- File picker -->
+    <string name="select_folder">یک پوشه را انتخاب کنید</string>
+    <string name="select_file">یک فایل را انتخاب کنید</string>
+    <string name="confirm_storage_access_title">تأیید دسترسی به حافظه خارجی</string>
+    <string name="confirm_storage_access_text">لطفاً برای اعطای دسترسی به نوشتن، پوشه بالای کارت SD را در صفحه بعدی انتخاب کنید</string>
+    <string name="confirm_storage_access_text_sd">اگر کارت SD را نمی‌بینید، این را امتحان کنید</string>
+    <string name="confirm_storage_access_android_text">لطفاً با فشار دادن \'استفاده از این پوشه\' در پایین، به برنامه اجازه دهید به فضای ذخیره انتخابی در صفحه بعدی دسترسی پیدا کند.</string>
+    <string name="confirm_selection">تأیید انتخاب</string>
+
+    <plurals name="items">
+        <item quantity="one">%d مورد</item>
+        <item quantity="other">%d موارد</item>
+    </plurals>
+
+    <!-- Are you sure you want to delete 5 items? -->
+    <plurals name="delete_items">
+        <item quantity="one">%d مورد</item>
+        <item quantity="other">%d موارد</item>
+    </plurals>
+
+    <plurals name="deleting_items">
+        <item quantity="one">در حال حذف %d مورد</item>
+        <item quantity="other">حذف %d موارد</item>
+    </plurals>
+
+    <!-- Favorites -->
+    <string name="favorites">موارد دلخواه</string>
+    <string name="add_favorites">افزودن موارد دلخواه</string>
+    <string name="add_to_favorites">افزودن به موارد دلخواه</string>
+    <string name="remove_from_favorites">حذف از موارد دلخواه</string>
+
+    <!-- Search -->
+    <string name="search">جستجو</string>
+    <string name="type_2_characters">برای شروع جستجو، حداقل 2 نویسه تایپ کنید.</string>
+
+    <!-- فیلترها -->
+    <string name="filter">فیلتر</string>
+    <string name="no_items_found">هیچ موردی یافت نشد.</string>
+    <string name="change_filter">تغییر فیلتر</string>
+
+    <!-- مجوزها -->
+    <string name="no_storage_permissions">اجازه ذخیره سازی مورد نیاز است</string>
+    <string name="no_contacts_permission">مجوز مخاطبین مورد نیاز است</string>
+    <string name="no_camera_permissions">اجازه دوربین مورد نیاز است</string>
+    <string name="no_audio_permissions">اجازه صوتی مورد نیاز است</string>
+
+    <!-- تغییر نام -->
+    <string name="rename_file">تغییر نام فایل</string>
+    <string name="rename_folder">تغییر نام پوشه</string>
+    <string name="rename_file_error">نام فایل را نمی‌توان تغییر داد</string>
+    <string name="rename_folder_error">نام پوشه را نمی توان تغییر داد</string>
+    <string name="rename_folder_empty">نام پوشه نباید خالی باشد</string>
+    <string name="rename_folder_exists">پوشه ای با آن نام از قبل وجود دارد</string>
+    <string name="rename_folder_root">نام پوشه اصلی یک فضای ذخیره‌سازی را نمی‌توان تغییر نام داد</string>
+    <string name="rename_folder_ok">نام پوشه با موفقیت تغییر یافت</string>
+    <string name="renaming_folder">تغییر نام پوشه</string>
+    <string name="filename_cannot_be_empty">نام فایل نمی تواند خالی باشد</string>
+    <string name="filename_invalid_characters">نام فایل حاوی نویسه‌های نامعتبر است</string>
+    <string name="filename_invalid_characters_placeholder">نام فایل \'%s\' حاوی نویسه‌های نامعتبر است</string>
+    <string name="extension_cannot_be_empty">افزونه نمی تواند خالی باشد</string>
+    <string name="source_file_doesnt_exist">فایل منبع %s وجود ندارد</string>
+    <string name="prepend_filenames">پیش‌نویس نام فایل</string>
+    <string name="append_filenames">افزودن نام فایل</string>
+    <string name="simple_renaming">تغییر نام ساده</string>
+    <string name="pattern_renaming">الگو</string>
+    <string name="string_to_add">رشته برای افزودن</string>
+    <string name="rename_date_time_pattern">%Y - سال\n%M - ماه\n%D - روز\n%h - ساعت\n%m - دقیقه\n%s - ثانیه\n%i - عدد در حال افزایش از 1</string>
+    <string name="filename_without_txt">نام فایل (بدون .txt)</string>
+    <string name="filename_without_json">نام فایل (بدون .json)</string>
+
+</resources>
